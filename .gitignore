@@ -1,0 +1,8 @@
+*.o
+ref/*
+oslab/hdc-0.11.img
+oslab/gdb
+oslab/dbg-c
+oslab/dbg-asm
+oslab/bochs/bochs-dbg
+oslab/bochs/bochs-gdb
