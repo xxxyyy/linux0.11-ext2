@@ -43,7 +43,8 @@ static int reset = 1;
  *  This struct defines the HD's and their types.
  */
 struct hd_i_struct {
-	int head,sect,cyl,wpcom,lzone,ctl;
+    // 磁头、 每磁道扇区数、柱面数、写前预补偿柱面号、磁头着陆区柱面号、控制字节
+	int head, sect,        cyl,     wpcom,           lzone,            ctl;
 	};
 #ifdef HD_TYPE
 struct hd_i_struct hd_info[] = { HD_TYPE };
@@ -57,6 +58,7 @@ static struct hd_struct {
 	long start_sect;
 	long nr_sects;
 } hd[5*MAX_HD]={{0,0},};
+//        MAX_HD == 2 
 
 #define port_read(port,buf,nr) \
 __asm__("cld;rep;insw"::"d" (port),"D" (buf),"c" (nr))
@@ -133,6 +135,7 @@ int sys_setup(void * BIOS)
 		hd[i*5].start_sect = 0;
 		hd[i*5].nr_sects = 0;
 	}
+    printk("*We has %d drive\n", NR_HD);
 	for (drive=0 ; drive<NR_HD ; drive++) {
 		if (!(bh = bread(0x300 + drive*5,0))) {
 			printk("Unable to read partition table of drive %d\n\r",
@@ -142,7 +145,7 @@ int sys_setup(void * BIOS)
 		if (bh->b_data[510] != 0x55 || (unsigned char)
 		    bh->b_data[511] != 0xAA) {
 			printk("Bad partition table on drive %d\n\r",drive);
-			panic("");
+			//panic("");
 		}
 		p = 0x1BE + (void *)bh->b_data;
 		for (i=1;i<5;i++,p++) {
