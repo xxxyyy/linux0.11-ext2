@@ -1,0 +1,141 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+DONT_USE_DCACHE	ext2_fs.h	16;"	d
+EXT2FS_DEBUG	ext2_fs.h	11;"	d
+EXT2FS_DEBUG_CACHE	ext2_fs.h	21;"	d
+EXT2FS_VERSION	ext2_fs.h	26;"	d
+EXT2_ACL_INO	ext2_fs.h	33;"	d
+EXT2_ADDR_PER_BLOCK	ext2_fs.h	53;"	d
+EXT2_BAD_INO	ext2_fs.h	31;"	d
+EXT2_BLOCKS_PER_GROUP	ext2_fs.h	103;"	d
+EXT2_BLOCKS_PER_GROUP	ext2_fs.h	107;"	d
+EXT2_BLOCK_SIZE	ext2_fs.h	49;"	d
+EXT2_BLOCK_SIZE	ext2_fs.h	51;"	d
+EXT2_BLOCK_SIZE_BITS	ext2_fs.h	55;"	d
+EXT2_BLOCK_SIZE_BITS	ext2_fs.h	57;"	d
+EXT2_DESC_PER_BLOCK	ext2_fs.h	104;"	d
+EXT2_DESC_PER_BLOCK	ext2_fs.h	108;"	d
+EXT2_DIND_BLOCK	ext2_fs.h	117;"	d
+EXT2_DIR_PAD	ext2_fs.h	264;"	d
+EXT2_DIR_REC_LEN	ext2_fs.h	266;"	d
+EXT2_DIR_ROUND	ext2_fs.h	265;"	d
+EXT2_FIRST_INO	ext2_fs.h	34;"	d
+EXT2_FRAGS_PER_BLOCK	ext2_fs.h	69;"	d
+EXT2_FRAGS_PER_BLOCK	ext2_fs.h	72;"	d
+EXT2_FRAG_SIZE	ext2_fs.h	68;"	d
+EXT2_FRAG_SIZE	ext2_fs.h	71;"	d
+EXT2_IND_BLOCK	ext2_fs.h	116;"	d
+EXT2_INODES_PER_BLOCK	ext2_fs.h	59;"	d
+EXT2_INODES_PER_GROUP	ext2_fs.h	105;"	d
+EXT2_INODES_PER_GROUP	ext2_fs.h	109;"	d
+EXT2_MAX_BLOCK_SIZE	ext2_fs.h	46;"	d
+EXT2_MAX_FRAG_SIZE	ext2_fs.h	65;"	d
+EXT2_MIN_BLOCK_LOG_SIZE	ext2_fs.h	47;"	d
+EXT2_MIN_BLOCK_SIZE	ext2_fs.h	45;"	d
+EXT2_MIN_FRAG_LOG_SIZE	ext2_fs.h	66;"	d
+EXT2_MIN_FRAG_SIZE	ext2_fs.h	64;"	d
+EXT2_NAME_LEN	ext2_fs.h	250;"	d
+EXT2_NDIR_BLOCKS	ext2_fs.h	115;"	d
+EXT2_N_BLOCKS	ext2_fs.h	119;"	d
+EXT2_OLD_SUPER_MAGIC	ext2_fs.h	39;"	d
+EXT2_ROOT_INO	ext2_fs.h	32;"	d
+EXT2_SUPER_MAGIC	ext2_fs.h	40;"	d
+EXT2_TIND_BLOCK	ext2_fs.h	118;"	d
+_LINUX_EXT2_FS_H	ext2_fs.h	2;"	d
+__s16	ext2_fs.h	/^typedef short           __s16;$/;"	t
+__s32	ext2_fs.h	/^typedef int             __s32;$/;"	t
+__s8	ext2_fs.h	/^typedef char            __s8;$/;"	t
+__u16	ext2_fs.h	/^typedef unsigned short  __u16;$/;"	t
+__u32	ext2_fs.h	/^typedef unsigned long   __u32;$/;"	t
+__u8	ext2_fs.h	/^typedef unsigned char   __u8;$/;"	t
+bg_block_bitmap	ext2_fs.h	/^	unsigned long bg_block_bitmap;		\/* Blocks bitmap block *\/$/;"	m	struct:ext2_group_desc
+bg_block_bitmap	ext2_fs.h	/^	unsigned long bg_block_bitmap;		\/* Blocks bitmap block *\/$/;"	m	struct:ext2_old_group_desc
+bg_free_blocks_count	ext2_fs.h	/^	unsigned short bg_free_blocks_count;	\/* Free blocks count *\/$/;"	m	struct:ext2_group_desc
+bg_free_blocks_count	ext2_fs.h	/^	unsigned short bg_free_blocks_count;	\/* Free blocks count *\/$/;"	m	struct:ext2_old_group_desc
+bg_free_inodes_count	ext2_fs.h	/^	unsigned short bg_free_inodes_count;	\/* Free inodes count *\/$/;"	m	struct:ext2_group_desc
+bg_free_inodes_count	ext2_fs.h	/^	unsigned short bg_free_inodes_count;	\/* Free inodes count *\/$/;"	m	struct:ext2_old_group_desc
+bg_inode_bitmap	ext2_fs.h	/^	unsigned long bg_inode_bitmap;		\/* Inodes bitmap block *\/$/;"	m	struct:ext2_group_desc
+bg_inode_bitmap	ext2_fs.h	/^	unsigned long bg_inode_bitmap;		\/* Inodes bitmap block *\/$/;"	m	struct:ext2_old_group_desc
+bg_inode_table	ext2_fs.h	/^	unsigned long bg_inode_table;		\/* Inodes table block *\/$/;"	m	struct:ext2_group_desc
+bg_inode_table	ext2_fs.h	/^	unsigned long bg_inode_table;		\/* Inodes table block *\/$/;"	m	struct:ext2_old_group_desc
+bg_pad	ext2_fs.h	/^	unsigned short bg_pad;$/;"	m	struct:ext2_group_desc
+bg_reserved	ext2_fs.h	/^	unsigned long bg_reserved[3];$/;"	m	struct:ext2_group_desc
+bg_used_dirs_count	ext2_fs.h	/^	unsigned short bg_used_dirs_count;	\/* Directories count *\/$/;"	m	struct:ext2_group_desc
+blocksize	test2.c	/^const int blocksize = 1024;$/;"	v
+ext2_dir_entry	ext2_fs.h	/^struct ext2_dir_entry {$/;"	s
+ext2_group_desc	ext2_fs.h	/^struct ext2_group_desc$/;"	s
+ext2_inode	ext2_fs.h	/^struct ext2_inode {$/;"	s
+ext2_old_group_desc	ext2_fs.h	/^struct ext2_old_group_desc$/;"	s
+ext2_super_block	ext2_fs.h	/^struct ext2_super_block {$/;"	s
+i_atime	ext2_fs.h	/^	unsigned long i_atime;		\/* Access time *\/$/;"	m	struct:ext2_inode
+i_block	ext2_fs.h	/^	unsigned long i_block[EXT2_N_BLOCKS];\/* Pointers to blocks *\/$/;"	m	struct:ext2_inode
+i_blocks	ext2_fs.h	/^	unsigned long i_blocks;		\/* Blocks count *\/$/;"	m	struct:ext2_inode
+i_ctime	ext2_fs.h	/^	unsigned long i_ctime;		\/* Creation time *\/$/;"	m	struct:ext2_inode
+i_dir_acl	ext2_fs.h	/^	unsigned long i_dir_acl;	\/* Directory ACL *\/$/;"	m	struct:ext2_inode
+i_dtime	ext2_fs.h	/^	unsigned long i_dtime;		\/* Deletion Time *\/$/;"	m	struct:ext2_inode
+i_faddr	ext2_fs.h	/^	unsigned short i_faddr;		\/* Fragment address *\/$/;"	m	struct:ext2_inode
+i_file_acl	ext2_fs.h	/^	unsigned long i_file_acl;	\/* File ACL *\/$/;"	m	struct:ext2_inode
+i_flags	ext2_fs.h	/^	unsigned long i_flags;		\/* File flags *\/$/;"	m	struct:ext2_inode
+i_frag	ext2_fs.h	/^	unsigned char i_frag;		\/* Fragment number *\/$/;"	m	struct:ext2_inode
+i_fsize	ext2_fs.h	/^	unsigned char i_fsize;		\/* Fragment size *\/$/;"	m	struct:ext2_inode
+i_gid	ext2_fs.h	/^	unsigned short i_gid;		\/* Group Id *\/$/;"	m	struct:ext2_inode
+i_links_count	ext2_fs.h	/^	unsigned short i_links_count;	\/* Links count *\/$/;"	m	struct:ext2_inode
+i_mode	ext2_fs.h	/^	unsigned short i_mode;		\/* File mode *\/$/;"	m	struct:ext2_inode
+i_mtime	ext2_fs.h	/^	unsigned long i_mtime;		\/* Modification time *\/$/;"	m	struct:ext2_inode
+i_reserved1	ext2_fs.h	/^	unsigned long i_reserved1;$/;"	m	struct:ext2_inode
+i_reserved2	ext2_fs.h	/^	unsigned long i_reserved2[3];$/;"	m	struct:ext2_inode
+i_size	ext2_fs.h	/^	unsigned long i_size;		\/* Size in bytes *\/$/;"	m	struct:ext2_inode
+i_uid	ext2_fs.h	/^	unsigned short i_uid;		\/* Owner Uid *\/$/;"	m	struct:ext2_inode
+i_version	ext2_fs.h	/^	unsigned long i_version;	\/* File version (for NFS) *\/$/;"	m	struct:ext2_inode
+inode	ext2_fs.h	/^	unsigned long inode;		\/* Inode number *\/$/;"	m	struct:ext2_dir_entry
+main	test2.c	/^int main(void)$/;"	f
+name	ext2_fs.h	/^	char name[EXT2_NAME_LEN];	\/* File name *\/$/;"	m	struct:ext2_dir_entry
+name_len	ext2_fs.h	/^	unsigned short name_len;	\/* Name length *\/$/;"	m	struct:ext2_dir_entry
+rec_len	ext2_fs.h	/^	unsigned short rec_len;		\/* Directory entry length *\/$/;"	m	struct:ext2_dir_entry
+s_algorithm_usage_bitmap	ext2_fs.h	/^    __u32	s_algorithm_usage_bitmap; \/* For compression *\/$/;"	m	struct:ext2_super_block
+s_block_group_nr	ext2_fs.h	/^    __u16	s_block_group_nr; \/* block group # of this superblock *\/$/;"	m	struct:ext2_super_block
+s_blocks_count	ext2_fs.h	/^    __u32	s_blocks_count;	\/* Blocks count *\/$/;"	m	struct:ext2_super_block
+s_blocks_per_group	ext2_fs.h	/^    __u32	s_blocks_per_group;	\/* # Blocks per group *\/$/;"	m	struct:ext2_super_block
+s_checkinterval	ext2_fs.h	/^    __u32	s_checkinterval;	\/* max. time between checks *\/$/;"	m	struct:ext2_super_block
+s_creator_os	ext2_fs.h	/^    __u32	s_creator_os;	\/* OS *\/$/;"	m	struct:ext2_super_block
+s_def_resgid	ext2_fs.h	/^    __u16	s_def_resgid;	\/* Default gid for reserved blocks *\/$/;"	m	struct:ext2_super_block
+s_def_resuid	ext2_fs.h	/^    __u16	s_def_resuid;	\/* Default uid for reserved blocks *\/$/;"	m	struct:ext2_super_block
+s_errors	ext2_fs.h	/^    __u16	s_errors;	\/* Behaviour when detecting errors *\/$/;"	m	struct:ext2_super_block
+s_feature_compat	ext2_fs.h	/^    __u32	s_feature_compat; \/* compatible feature set *\/$/;"	m	struct:ext2_super_block
+s_feature_incompat	ext2_fs.h	/^    __u32	s_feature_incompat; \/* incompatible feature set *\/$/;"	m	struct:ext2_super_block
+s_feature_ro_compat	ext2_fs.h	/^    __u32	s_feature_ro_compat; \/* readonly-compatible feature set *\/$/;"	m	struct:ext2_super_block
+s_first_data_block	ext2_fs.h	/^    __u32	s_first_data_block;	\/* First Data Block *\/$/;"	m	struct:ext2_super_block
+s_first_ino	ext2_fs.h	/^    __u32	s_first_ino; \/* First non-reserved inode *\/$/;"	m	struct:ext2_super_block
+s_frags_per_group	ext2_fs.h	/^    __u32	s_frags_per_group;	\/* # Fragments per group *\/$/;"	m	struct:ext2_super_block
+s_free_blocks_count	ext2_fs.h	/^    __u32	s_free_blocks_count;	\/* Free blocks count *\/$/;"	m	struct:ext2_super_block
+s_free_inodes_count	ext2_fs.h	/^    __u32	s_free_inodes_count;	\/* Free inodes count *\/$/;"	m	struct:ext2_super_block
+s_inode_size	ext2_fs.h	/^    __u16 s_inode_size; \/* size of inode structure *\/$/;"	m	struct:ext2_super_block
+s_inodes_count	ext2_fs.h	/^    __u32	s_inodes_count;	\/* Inodes count *\/$/;"	m	struct:ext2_super_block
+s_inodes_per_group	ext2_fs.h	/^    __u32	s_inodes_per_group;	\/* # Inodes per group *\/$/;"	m	struct:ext2_super_block
+s_journal_dev	ext2_fs.h	/^    __u32	s_journal_dev;	\/* device number of journal file *\/$/;"	m	struct:ext2_super_block
+s_journal_inum	ext2_fs.h	/^    __u32	s_journal_inum;	\/* inode number of journal file *\/$/;"	m	struct:ext2_super_block
+s_journal_uuid	ext2_fs.h	/^    __u8	s_journal_uuid[16];	\/* uuid of journal superblock *\/$/;"	m	struct:ext2_super_block
+s_last_mounted	ext2_fs.h	/^    char	s_last_mounted[64]; \/* directory where last mounted *\/$/;"	m	struct:ext2_super_block
+s_last_orphan	ext2_fs.h	/^    __u32	s_last_orphan;	\/* start of list of inodes to delete *\/$/;"	m	struct:ext2_super_block
+s_lastcheck	ext2_fs.h	/^    __u32	s_lastcheck;	\/* time of last check *\/$/;"	m	struct:ext2_super_block
+s_log_block_size	ext2_fs.h	/^    __u32	s_log_block_size;	\/* Block size *\/$/;"	m	struct:ext2_super_block
+s_log_frag_size	ext2_fs.h	/^    __s32	s_log_frag_size;	\/* Fragment size *\/$/;"	m	struct:ext2_super_block
+s_magic	ext2_fs.h	/^    __u16	s_magic;	\/* Magic signature *\/$/;"	m	struct:ext2_super_block
+s_max_mnt_count	ext2_fs.h	/^    __s16	s_max_mnt_count;	\/* Maximal mount count *\/$/;"	m	struct:ext2_super_block
+s_minor_rev_level	ext2_fs.h	/^    __u16	s_minor_rev_level; \/* minor revision level *\/$/;"	m	struct:ext2_super_block
+s_mnt_count	ext2_fs.h	/^    __u16	s_mnt_count;	\/* Mount count *\/$/;"	m	struct:ext2_super_block
+s_mtime	ext2_fs.h	/^    __u32	s_mtime;	\/* Mount time *\/$/;"	m	struct:ext2_super_block
+s_padding1	ext2_fs.h	/^    __u16	s_padding1;$/;"	m	struct:ext2_super_block
+s_prealloc_blocks	ext2_fs.h	/^    __u8	s_prealloc_blocks;	\/* Nr of blocks to try to preallocate*\/$/;"	m	struct:ext2_super_block
+s_prealloc_dir_blocks	ext2_fs.h	/^    __u8	s_prealloc_dir_blocks;	\/* Nr to preallocate for dirs *\/$/;"	m	struct:ext2_super_block
+s_r_blocks_count	ext2_fs.h	/^    __u32	s_r_blocks_count;	\/* Reserved blocks count *\/$/;"	m	struct:ext2_super_block
+s_reserved	ext2_fs.h	/^    __u32	s_reserved[197];	\/* Padding to the end of the block *\/$/;"	m	struct:ext2_super_block
+s_rev_level	ext2_fs.h	/^    __u32	s_rev_level;	\/* Revision level *\/$/;"	m	struct:ext2_super_block
+s_state	ext2_fs.h	/^    __u16	s_state;	\/* File system state *\/$/;"	m	struct:ext2_super_block
+s_uuid	ext2_fs.h	/^    __u8	s_uuid[16];	\/* 128-bit uuid for volume *\/$/;"	m	struct:ext2_super_block
+s_volume_name	ext2_fs.h	/^    char	s_volume_name[16]; \/* volume name *\/$/;"	m	struct:ext2_super_block
+s_wtime	ext2_fs.h	/^    __u32	s_wtime;	\/* Write time *\/$/;"	m	struct:ext2_super_block

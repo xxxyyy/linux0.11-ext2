@@ -129,11 +129,18 @@ static struct super_block * read_super(int dev)
 	*((struct d_super_block *) s) =
 		*((struct d_super_block *) bh->b_data);
 	brelse(bh);
+
+    // 未知原因，自己制作的镜像无法通过magic的校验；注释这句，挂载后依然可以正常。。。
 	if (s->s_magic != SUPER_MAGIC) {
 		s->s_dev = 0;
 		free_super(s);
+        printk("magic:%X, but should:%X\n", s->s_magic, SUPER_MAGIC); 
 		return NULL;
 	}
+    /*
+    */
+
+
 	for (i=0;i<I_MAP_SLOTS;i++)
 		s->s_imap[i] = NULL;
 	for (i=0;i<Z_MAP_SLOTS;i++)
@@ -215,6 +222,7 @@ int sys_mount(char * dev_name, char * dir_name, int rw_flag)
 		return -ENOENT;
 	if (dir_i->i_count != 1 || dir_i->i_num == ROOT_INO) {
 		iput(dir_i);
+        printk("1\n");
 		return -EBUSY;
 	}
 	if (!S_ISDIR(dir_i->i_mode)) {
@@ -223,10 +231,12 @@ int sys_mount(char * dev_name, char * dir_name, int rw_flag)
 	}
 	if (!(sb=read_super(dev))) {
 		iput(dir_i);
+        printk("2\n");
 		return -EBUSY;
 	}
 	if (sb->s_imount) {
 		iput(dir_i);
+        printk("3\n");
 		return -EBUSY;
 	}
 	if (dir_i->i_mount) {

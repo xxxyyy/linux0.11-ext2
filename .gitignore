@@ -6,3 +6,5 @@ oslab/dbg-c
 oslab/dbg-asm
 oslab/bochs/bochs-dbg
 oslab/bochs/bochs-gdb
+usermode/t2
+usermode/*img*
