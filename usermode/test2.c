@@ -60,6 +60,7 @@ int main(void)
 
     /* inode bitmap(inode位图) 的起始地址可以由gdt表中的数据来算  */
     char *inmap = img + gdt->bg_inode_bitmap * blocksize;
+    /*printf("%X\n", inmap-img);  */ /* AC00 */
     (void)inmap;
 
     /* inode bitmap(inode位图) 占1个block， 故接下来的inode表的地址可以这么算  */
@@ -77,9 +78,25 @@ int main(void)
      *
      *   XXX 危险代码风格，千万不要模仿！
      */
-    struct ext2_inode *anode = inodes + 13 ;
-    char   *data = anode->i_block[0] * blocksize + img;
-    printf("文件的内容是：%s\n", data);
+    /*struct ext2_inode *anode = inodes + 13 ;  */
+//    char   *data = anode->i_block[0] * blocksize + img;
+//    printf("文件的内容是：%s\n", data);
+
+    struct ext2_inode *iroot = inodes + 1; /* root dir 的 inode */
+    struct ext2_dir_entry *root = (struct ext2_dir_entry*)(img + iroot->i_block[0] * blocksize);
+    printf("inode:%ld, len:%d\n", root->inode, root->rec_len);
+    struct ext2_inode *file_inode;
+    int total_len = root->rec_len;
+    while( root->rec_len && total_len < blocksize ){
+        /*printf("*inode:%ld*\n", root->inode);  */
+        if( 1 == root->file_type ){
+            file_inode = inodes + root->inode - 1; /*第N块的下标是N-1 */
+            printf("data: %s\n", file_inode->i_block[0] * blocksize + img);
+        }
+        total_len += root->rec_len;
+        root = (struct ext2_dir_entry*)((char*)root + root->rec_len);
+    }
+
     return 0;
 }
 

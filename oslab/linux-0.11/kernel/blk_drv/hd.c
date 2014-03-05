@@ -102,27 +102,6 @@ int sys_setup(void * BIOS)
 				hd_info[i].sect*hd_info[i].cyl;
 	}
 
-	/*
-		We querry CMOS about hard disks : it could be that 
-		we have a SCSI/ESDI/etc controller that is BIOS
-		compatable with ST-506, and thus showing up in our
-		BIOS table, but not register compatable, and therefore
-		not present in CMOS.
-
-		Furthurmore, we will assume that our ST-506 drives
-		<if any> are the primary drives in the system, and 
-		the ones reflected as drive 1 or 2.
-
-		The first drive is stored in the high nibble of CMOS
-		byte 0x12, the second in the low nibble.  This will be
-		either a 4 bit drive type or 0xf indicating use byte 0x19 
-		for an 8 bit type, drive 1, 0x1a for drive 2 in CMOS.
-
-		Needless to say, a non-zero value means we have 
-		an AT controller hard disk for that drive.
-
-		
-	*/
 
 	if ((cmos_disks = CMOS_READ(0x12)) & 0xf0)
 		if (cmos_disks & 0x0f)
